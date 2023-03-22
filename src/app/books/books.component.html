@@ -1,0 +1,15 @@
+<div class="main">
+  <h1>Books</h1>
+  <div class="books">
+    <div class="book" *ngFor="let book of data">
+      <img src="assets/heap-books-sketch-library-stack-education-symbol_80590-12797.avif" alt="">
+      <div class="information">
+        <h3>{{book.title}}</h3>
+        <p>{{book.description}}</p>
+        <span>{{book.publishedYear}}</span>
+        <button>Read</button>
+      </div>
+    </div>
+  </div>
+</div>
+

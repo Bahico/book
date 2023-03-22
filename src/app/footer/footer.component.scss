@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 50px 10%;
+  background: #fafafa;
+  border-radius: 0 0 1rem 1rem;
+
+  .column {
+    width: 250px;
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      border: 1px solid rgba(0, 0, 0, 0.34);
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: var(--color);
+      border: 1px solid white;
+      margin-top: 10px;
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    .column {
+      width: 150px;
+      h1 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
